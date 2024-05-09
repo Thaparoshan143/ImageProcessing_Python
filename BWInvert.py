@@ -19,6 +19,6 @@ width, height = dim[0], dim[1]
 print(width)
 print(height)
 
-img = np.where(img > -10, MAX-img, 0)
+img = MAX - img
 img = np.dot(img[...,:3], [0.2989, 0.5870, 0.1140])
 cv2.imwrite(out_filename, img)
