@@ -73,5 +73,6 @@ if is_folder:
                 print(infilename)
                 print(outfilename)
             compress_image_in_iteration(infilename, outfilename, interpolation_method, compression_factor, iteration_count, write_all_iteration)
-
+else:
+    compress_image_in_iteration(in_filename, out_filename, interpolation_method, compression_factor, iteration_count, write_all_iteration)
 
